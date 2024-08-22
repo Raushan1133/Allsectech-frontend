@@ -35,9 +35,9 @@ const Home = () => {
     {/* Section 2 */}
 
     <div className='max-w-full bg-white'>
-    <div className='container bg-white'>
+    <div className='container bg-white mx-auto'>
       <div className=' p-[50px] flex justify-center items-center flex-col sm:flex-row'>
-        <div className='max-w-sm rounded-2xl overflow-hidden bg-slate-100'>
+        <div className='max-w-sm rounded-2xl overflow-hidden bg-slate-100 shadow'>
           <img className='overflow-hidden' src={section2Card} alt="section2Card" />
           <div>
             <p className='text-black p-5'>Navigating Transformation in BPM and HR Outsourcing: Staying Ahead of the Curve?</p>
@@ -62,15 +62,15 @@ const Home = () => {
     </div>
 
     {/* Section 3 */}
-    <div className='max-w-full bg-white py-[50px] section3'>
-        <div className='container flex justify-center px-4'>
+    <div className='max-w-full bg-white py-[50px] w-full section3 mx-auto'>
+        <div className='container flex mx-auto justify-center px-4'>
           <div className='max-w-4xl'>
           <h1 className='text-black font-bold text-4xl'>Insights and Updates</h1>
           <p className='text-black mt-8'>Hit the Customer Experience homerun with latest insights, articles, findings, and blogs on innovative CEM technology, checklists to outsource customer service and digital transformation strategies.</p>
 
-          <div className='py-[50px] flex gap-5 sm:flex-row flex-col justify-center'>
+          <div className='py-[50px] flex mx-auto gap-5 sm:flex-row flex-col justify-center'>
             {/* Card 1 */}
-            <div className='max-w-sm'>
+            <div className='max-w-sm mx-auto shadow'>
             <img src={Section3Card1} alt="card1" />
 
             <div className='text-black p-4'>
@@ -79,7 +79,7 @@ const Home = () => {
             </div>
             </div>
             {/* Card 2 */}
-            <div className='max-w-sm mt-5 sm:mt-0'>
+            <div className='max-w-sm mt-5 sm:mt-0 mx-auto shadow'>
               <img src={Section3Card2} alt="card2" />
               <div className='text-black p-4'>
             <p >Navigating the Year-End Payroll Maze: Essential Tips for Smooth Processing in India</p>
@@ -94,7 +94,7 @@ const Home = () => {
 
     {/* Section 4 */}
     <div className='max-w-full px-4 bg-white py-[50px] '>
-        <div className='container flex justify-center'>
+        <div className='container mx-auto flex justify-center'>
           <div className='max-w-4xl'>
             <h1 className='text-4xl font-bold text-black text-center'>Accreditations & Certifications</h1>
             <div className='flex justify-between sm:flex-row items-center flex-col'>
@@ -114,7 +114,7 @@ const Home = () => {
 
     {/* Section 5 */}
     <div style={{backgroundImage:`url(${Fifthbg})`}} className="max-w-full px-4 bg-white py-[50px]">
-      <div className="container  flex justify-center ">
+      <div className="container mx-auto  flex justify-center ">
            <div className='max-w-2xl text-black '>
            <h1 className='text-4xl font-bold text-black'>Allsec: Your Agile Growth Partner</h1>
            <p className='mt-10'>Align your growth with market trends, backed by Allsec’s Expertise. Our customer-centric solutions with analytics-driven strategies, offer adaptability to swiftly respond to evolving market dynamics, propelling your progress in a constantly changing business landscape.</p>
@@ -122,7 +122,7 @@ const Home = () => {
            </div>
       </div>
   
-      <div className="container flex justify-center px-4">
+      <div className="container flex justify-center mx-auto px-4">
            <div className='max-w-4xl'>
            <div className='max-w-full flex justify-between text-black mt-28 gap-5 flex-col sm:flex-row'>
             <div className='border max-w-32 w-full py-4 px-6 rounded-xl shadow-xl bg-white'>
@@ -161,7 +161,7 @@ const Home = () => {
     {/* Section 6 */}
     <div className="max-w-full px-4 py-[50px] bg-white">
           <h1 className='text-4xl text-center font-bold text-black'>Cultivating a Culture of Growth</h1>
-      <div className="container flex items-center mt-20 gap-10 flex-col sm:flex-row justify-center">
+      <div className="container flex items-center mx-auto mt-20 gap-10 flex-col sm:flex-row justify-center">
           <div className='max-w-sm'>
             <img src={sixthimg} alt="" />
           </div>
@@ -176,11 +176,11 @@ const Home = () => {
     </div>
 
     {/* Section 7 */}
-    <div className="max-w-full bg-white py-[50px]">
+    <div className="max-w-full bg-white py-[50px] mx-auto">
         <h1 className='text-4xl font-bold text-black text-center'>Start a Conversation</h1>
-      <div className="container px-4 flex justify-center flex-col md:flex-row   gap-5 mt-5">
+      <div className="container px-4 flex justify-center flex-col md:flex-row mx-auto gap-3  mt-5">
 
-        <div className=' flex gap-2 max-w-md w-full justify-center'>
+        <div className=' flex  max-w-md w-full justify-center items-center mx-auto md:mx-0'>
           <form action="" className='flex gap-4 flex-col w-full'>
             <input type="text" className='bg-white border px-4 grid-cols-6 py-4 rounded w-full border-black focus:border-red-500' placeholder='Full name' />
             <input type="text" className='bg-white border px-4 grid-cols-6 py-4 rounded w-full border-black focus:border-red-500' placeholder='Business email' />
@@ -188,7 +188,7 @@ const Home = () => {
           </form>
         </div>
 
-        <div className='flex flex-col max-w-md text-black justify-center'>
+        <div className='flex flex-col max-w-md text-black justify-center md:mx-0 mx-auto md:ml-3'>
         <div className='flex gap-1'>
           <input type="checkbox"  /><p>By submitting this information, I agree that I have gone through the Allsec’s Privacy Policy and I provide my consent to Allsec Technologies to process & store my personal information.Please fill out this field.</p>
         </div>

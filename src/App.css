@@ -7,3 +7,35 @@
     background-image: url(../src/assets/homepage-images/Insight-section.png);
 
 }
+
+.insights{
+    background-image: url(./assets/insights/banner.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.insights-s3{
+    background-image: url(./assets/insights/banner2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section6{
+    background-image: url(./assets/insights/banner4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ::-webkit-scrollbar{
+    
+}
+
+::-webkit-scrollbar-track{
+    width: 10px ;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+} */

@@ -5,7 +5,7 @@ import './index.css'
 import {RouterProvider} from 'react-router-dom'
 import {createBrowserRouter} from 'react-router-dom'
 import Home from './pages/Home.jsx'
-import EmployeeExperienceManagement from './pages/EmployeeExperienceManagement.jsx'
+import Insights from './pages/Insights.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,9 +17,10 @@ const router = createBrowserRouter([
               element:<Home />
           },
           {
-            path:"employee-experience-management",
-            element:<EmployeeExperienceManagement />
-          }
+            path:"insights",
+            element:<Insights />
+          },
+
       ]
   }
 ]);
