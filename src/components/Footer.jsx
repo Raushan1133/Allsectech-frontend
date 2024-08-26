@@ -1,5 +1,5 @@
 import FooterImg from '../assets/homepage-images/footer-img.jpg'
-import Logo from '../assets/homepage-images/footer-logo.png'
+import Logo from '../assets/main-logo.png'
 import {FaFacebook} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
 import {FaYoutube} from 'react-icons/fa'
@@ -7,7 +7,7 @@ import {FaLinkedin} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
-    <div style={{backgroundImage:`url(${FooterImg})` , backgroundSize:'cover'}} className='max-w-full'>
+    <div  className='max-w-full bg-blue-600'>
       <div className="max-w-[1280px] px-[100px] py-[50px]">
            <div className="w-full flex justify-between items-center mx-auto flex-col sm:flex-row" >
            <div className='max-w-sm'>
@@ -17,10 +17,10 @@ const Footer = () => {
             <div className='flex pl-10 md:justify-between justify-center max-w-full w-full flex-col sm:flex-row'>
             <ul className='text-white flex flex-col gap-10'>
                 <li>
-                <Link to={'/'}>Customer Experience Management</Link>
+                <Link to={'/insights'}>Insights</Link>
                 </li>
-                <Link to={'/'}>
-                <li>Employee Experience Management</li>
+                <Link to={'/Industries'}>
+                <li>Industries</li>
                 </Link>
             </ul>
             <ul className='text-white flex flex-col gap-5'>

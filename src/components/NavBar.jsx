@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../assets/homepage-images/Allsec-logo.jpg'
+import Logo from '../assets/main-logo.png'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
@@ -13,10 +13,79 @@ const NavBar = () => {
 
   return (
     <>
-    <div  className="navbar  text-black   text-4xl  peer bg-slate-200 hover:bg-white fixed z-10  hover:text-black transition-all">
-    <div className='h-full flex gap-3 items-center'>
-    <div className="navbar-start">
-      <div className="dropdown">
+    <div  className="navbar  text-black   text-4xl bg-slate-200 hover:bg-white fixed z-20  hover:text-black transition-all ">
+    <div className='h-full flex gap-3 items-center justify-between'>
+    <div className="navbar-start flex flex-auto items-center ">
+    <div className="dropdown">
+        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+        </div>
+        <ul
+          tabIndex={0}
+          className="menu menu-lg dropdown-content bg-white rounded-box z-[1] mt-3 w-96  p-2 shadow justify-center">
+        <li><Link to={'/insights'}>Insights</Link></li>
+
+        <li>
+            <Link to={'/industries'} >Industries</Link>
+        </li>
+        <li>
+            <Link to={'/services'} >Services</Link>
+        </li>
+        <li>
+            <Link to={'/careers'} >Careers</Link>
+        </li>
+        <li>
+            <Link to={'/'} >News</Link>
+        </li>
+        <li>
+            <Link to={'/'} >About us</Link>
+        </li>
+        </ul>
+      </div>
+      <Link to={'/'}>
+      <img src={Logo}  alt="Logo"  className='w-[180px]' />
+      </Link>
+    </div>
+    {/* Pc */}
+    <div className="navbar-center  hidden lg:flex">
+      <ul className="menu menu-horizontal px-1 h-full  ">
+          <li >
+            <Link to={'/insights'} onMouseEnter={()=>{setInsights(true)}} onMouseLeave={()=>setInsights(false)} className='text-lg font-semibold text-red-500 h-full '  >Insights</Link>
+          </li>
+        <li>
+            <Link to={'/industries'}  className='text-lg font-semibold text-red-500' onMouseEnter={()=>setIndustries(true)} onMouseLeave={()=>setIndustries(false)}>Industries</Link>
+        </li>
+        <li>
+            <Link to={'/services'} className='hover:text-red-500 text-lg  font-semibold text-red-500' onMouseEnter={()=>setServices(true)} onMouseLeave={()=>setServices(false)}>Services</Link>
+        </li>
+        <li>
+        <Link to={'/careers'} className='hover:text-red-500 text-lg  font-semibold text-red-500' onMouseEnter={()=>setCareers(true)} onMouseLeave={()=>setCareers(false)}>Careers</Link>
+        </li>
+        <li>
+        <Link className='hover:text-red-500 text-lg   font-semibold text-red-500' onMouseEnter={()=>setNews(true)} onMouseLeave={()=>setNews(false)}>News</Link>
+        </li>
+        <li>
+        <Link className='hover:text-red-500 text-lg font-semibold text-red-500' onMouseEnter={()=>setAbout(true)} onMouseLeave={()=>setAbout(false)}>About us</Link>
+        </li>
+        
+      </ul>
+    </div> 
+    </div> 
+
+    {/* Navbar end */}
+    {/* <div className="navbar-end ml-auto pr-3 flex ">
+    <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -33,17 +102,17 @@ const NavBar = () => {
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content bg-white  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          className="menu menu-md dropdown-content bg-white rounded-box z-[1] mt-3 w-96  p-2 shadow justify-center">
         <li><Link to={'/insights'}>Insights</Link></li>
 
         <li>
-            <Link to={'/'} >Industries</Link>
+            <Link to={'/industries'} >Industries</Link>
         </li>
         <li>
-            <Link to={'/'} >Services</Link>
+            <Link to={'/services'} >Services</Link>
         </li>
         <li>
-            <Link to={'/'} >Careers</Link>
+            <Link to={'/careers'} >Careers</Link>
         </li>
         <li>
             <Link to={'/'} >News</Link>
@@ -53,41 +122,8 @@ const NavBar = () => {
         </li>
         </ul>
       </div>
-      <img src={Logo} className='mix-blend-multiply ' alt="Logo" width={200} />
-    </div>
-    {/* Pc */}
-    <div className="navbar-center hidden lg:flex">
-      <ul className="menu menu-horizontal px-1 h-full  ">
-          <li >
-            <Link to={'/insights'} onMouseEnter={()=>{setInsights(true)}} onMouseLeave={()=>setInsights(false)} className='text-lg font-semibold text-red-500 h-full'  >Insights</Link>
-          </li>
-        <li>
-            <Link  className='text-lg font-semibold text-red-500' onMouseEnter={()=>setIndustries(true)} onMouseLeave={()=>setIndustries(false)}>Industries</Link>
-        </li>
-        <li>
-            <Link className='hover:text-red-500 text-lg  font-semibold text-red-500' onMouseEnter={()=>setServices(true)} onMouseLeave={()=>setServices(false)}>Services</Link>
-        </li>
-        <li>
-        <Link className='hover:text-red-500 text-lg  font-semibold text-red-500' onMouseEnter={()=>setCareers(true)} onMouseLeave={()=>setCareers(false)}>Careers</Link>
-        </li>
-        <li>
-        <Link className='hover:text-red-500 text-lg   font-semibold text-red-500' onMouseEnter={()=>setNews(true)} onMouseLeave={()=>setNews(false)}>News</Link>
-        </li>
-        <li>
-        <Link className='hover:text-red-500 text-lg font-semibold text-red-500' onMouseEnter={()=>setAbout(true)} onMouseLeave={()=>setAbout(false)}>About us</Link>
-        </li>
-        
-      </ul>
-    </div> </div> 
-
-    {/* Nav end */}
-    <div className="navbar-end hidden lg:flex -mt-5">
-      <ul className="menu menu-horizontal px-1 ">
-        <li><Link to={'/'} className='hover:text-red-500 text-lg' >Contact us</Link></li>
-        <li><Link to={'/'} className='hover:text-red-500 text-lg' >Inverstors</Link></li>
-        <li><Link to={'/'} className='hover:text-red-500 text-lg' >Contact us</Link></li>
-      </ul>
-    </div>  
+    </div> */}
+ 
     
   </div>
 

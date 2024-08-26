@@ -16,15 +16,13 @@ const Insights = () => {
   return (
     // Section 1
     <>
-    <div className='max-w-full  container bg-cover bg-no-repeat w-full h-full '>
-      <div className=' max-w-full insights h-full  bg-white pt-32 bg-cover bg-no-repeat w-full'>
-      <div className='py-28 sm:ml-20'>
-        <div className='bg-blue-500 opacity-80  max-w-lg  h-56  flex items-center'>
-          <h1 className='text-white font-semibold text-5xl ml-2'>INSIGHTS</h1>
+   <div className="container max-w-full pt-56 h-[60vh] industries  mx-auto px-20">
+            <div className="max-w-full mt-20 px-4 md:px-20 absolute top-52 bottom-0 right-0 left-0 ">
+            <div className='bg-blue-700  rounded  opacity-80  max-w-lg  h-56  flex items-center '>
+          <h1 className='text-white font-semibold text-3xl  sm:text-5xl ml-2'>Insights</h1>
         </div>
-      </div>
-    </div>
-    </div>
+            </div>
+        </div>
 
     <section>
       {/* Section 2 */}

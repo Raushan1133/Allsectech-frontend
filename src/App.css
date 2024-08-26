@@ -29,6 +29,31 @@
     background-position: center center;
 }
 
+.industries{
+    background-image: url(./assets/industries/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.services{
+    background-image: url(./assets/services/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.careers{
+    background-image: url(./assets/careers/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+input::placeholder{
+    font-size: 20px;
+}
+
 /* ::-webkit-scrollbar{
     
 }

@@ -9,27 +9,27 @@ import Section4Card2 from '../assets/homepage-images/fourth-section-second-img..
 import Section4Card3 from '../assets/homepage-images/fourth-section-third-img.jpg'
 import Fifthbg from '../assets/homepage-images/fifth-section-bg.jpg'
 import sixthimg from '../assets/homepage-images/sixth-section-img.png'
+import {Typewriter} from "react-simple-typewriter";
+
 
 const Home = () => {
   return (
    <>
     {/* Banner  */}
-    <div className="banner max-w-full  container bg-cover bg-no-repeat w-full h-full overflow-hidden" > 
-      <div className='p-[100px] sm:p-[250px] w-full text-center text-white'>
-        <h2 className='sm:text-4xl text-2xl font-semibold'>Discover your potential.</h2>
-        <h1 className='sm:text-6xl text-4xl font-semibold'>Navigate infinite possibilities.</h1>
-      <div className='pt-[100px] flex justify-between w-full flex-col lg:flex-row   gap-4'>
+    <div className="banner max-w-full py-64  container bg-cover bg-no-repeat w-full h-full overflow-hidden" > 
+      <div className=' max-w-full text-center text-white'>
+        <h2 className='sm:text-6xl text-2xl font-semibold text-center'>Discover your potential.</h2>
         <div className='w-full'>
-        <button className='rounded-lg w-full sm:w-[300px]  py-3 px-3  bg-red-500 '>Customer Experience Management</button>
-        <p className='font-bold mt-2'>Unlock the potential of business transformation</p>
+        <h1 className=' font-semibold text-xl'><Typewriter
+            words={['Navigate infinite possibilities']}
+            loop={false}
+            cursor
+            cursorStyle='_'
+            typeSpeed={100}
+            deleteSpeed={100}
+            delaySpeed={1000}
+            /></h1>
         </div>
-        
-        <div>
-        <button className=' rounded-lg w-full sm:w-[300px] py-3 px-3 bg-red-500'>Employee Experience Management </button>
-        <p className='font-bold mt-2'>Global Payroll and HRO Solutions for you and your employees</p>
-        </div>
-
-      </div>
       </div>
     </div>
     {/* Section 2 */}
